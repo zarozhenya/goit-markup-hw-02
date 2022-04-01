@@ -3,6 +3,7 @@
   --primary-heading-color: #212121;
   --secondary-heading-color: #ffffff;
   --primary-text-color: #757575;
+  --contacts-text-color: #757575;
   --nav-text-color: #212121;
   --secondary-text-color: #ffffff;
   --address-text-color: rgba(255, 255, 255, 0.6);
@@ -16,6 +17,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-first-color);
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
@@ -62,6 +64,7 @@ body {
 }
 .button {
   font-family: inherit;
+  font-size: 16px;
   cursor: pointer;
 }
 /* Header */
@@ -84,7 +87,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--nav-text-color);
+  color: var(--contacts-text-color);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -106,6 +109,7 @@ body {
 .hero-button {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
+  font-weight: 700;
   letter-spacing: 0.06em;
 }
 /* Preferences */
@@ -165,8 +169,13 @@ body {
 .address-link.city {
   color: var(--secondary-text-color);
 }
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
 /* Portfolio */
 .filter-button {
+  font-weight: 500;
   color: var(--nav-text-color);
   background-color: var(--bg-third-color);
   letter-spacing: 0.03em;
